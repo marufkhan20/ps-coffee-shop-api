@@ -15,7 +15,7 @@ const {
   loginValidationErrorHandler,
 } = require("../validations/userValidation");
 
-// create new user
+// create new user (Public)
 router.post(
   "/register",
   avatarUpload,
@@ -24,10 +24,10 @@ router.post(
   createNewUser
 );
 
-// verify account
+// verify account (Public)
 router.get("/verify", verifyAccount);
 
-// login account
+// login account (Public)
 router.post(
   "/login",
   loginValidation,
